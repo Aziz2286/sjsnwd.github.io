@@ -1,0 +1,40 @@
+.query{
+	font-size: 30px;
+	padding-bottom: 40px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	color: white;
+}
+.query input{
+	font-size: 25px;
+}
+.query #sub{
+	background: none;
+	color: white;
+	border: 5px solid balck;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 5px;
+}
+.query #sub:hover{
+	background-color: blueviolet;
+}
+.query #res{
+	background: none;
+	color: white;
+	border: 5px solid balck;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 5px;
+}
+.query #res:hover{
+	background-color: blueviolet;
+}
+body{
+	background-image: url("bg3.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Query</title>
+	<link rel="stylesheet" type="text/css" href="qu.css">
+</head>
+<body>
+<form autocomplete="off" name="submit-to-google-sheet">
+	<div class="query">
+	<center>
+Name
+<input type="text" id="name1" name="name" required placeholder="Enter your name"><br>
+Mobile Number
+<input type="Number" id="mob" name="number" required placeholder="Enter your mobile number"><br>
+E-mail
+<input type="email" name="email" id="email" required placeholder="Enter your E-mail"><br>
+Class
+<select>
+<option>L.K.G</option>
+<option>U.K.G</option>
+<option>I</option>
+<option>I</option>
+<option>II</option>
+<option>III</option>
+<option>IV</option>
+<option>V</option>
+<option>VI</option>
+<option>VII</option>
+<option>IX</option>
+<option>X</option>
+<option>XI</option>
+<option>XII</option>
+</select><br>
+Section
+<select>
+	<option>A</option>
+	<option>B</option>
+	<option>C</option>
+</select><br>
+Sex
+<select>
+	<option>Male</option>
+	<option>Female</option>
+</select><br>
+<input id="sub" type="submit" name="Submit">
+<input id="res" type="reset" name="reset">
+</center>
+</div>
+</form>
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbyGjXvXW3EcIyo4i7v7RR2sEG9NQn5YYSuOuG61C22H_edu8Yt_LzhtqbSVyMnDKx0o/exec'
+	const form = document.forms['submit-to-google-sheet']
+  
+	form.addEventListener('submit', e => {
+	  e.preventDefault()
+	  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response => console.log('Success!', response))
+		alert("Success")
+		.catch(error => console.error('Error!', error.message))
+		alert("An Error Occured")
+	})
+  </script>
+</body>
+</html>

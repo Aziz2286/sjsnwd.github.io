@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+body{
+	background-image: url("background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.links a{
+	background-color: #5593ab;
+	border-radius: 12px;
+	border: none;
+	color: white;
+	padding: 16px 50px;
+	font-family: monospace;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	display: inline-block; 
+}
+.links a:hover{
+	background-color: #4e4d80;
+}
+.foot a{
+	border-radius: 12px;
+	border: none;
+	padding: 10px 42px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	display: inline-block; 
+}
+.foot a:hover{
+	transform: translateY(14px);
+}
+.foot a:hover:after{
+	width: 100%;
+}
+#fr{
+	cursor: pointer;
+}
+#fr:hover{
+	transform: translateY(15px);
+}
+#sc:hover{
+	transform: translate3d(10px, 20px, 5px);
+}
+.motto h1{
+	cursor: pointer;
+	color: aqua;
+	border: 2px solid black;
+	font-size: 40px;
+}
+.motto h1:hover{
+	background-color: blueviolet;
+	font-size: 40px;
+	border-radius: 50px;
+	box-shadow: orangered;
+	transform: translateY(30px);
+}
+.motto h2{
+	font-size: 50px;
+	cursor: pointer;
+}
+.foot h2:hover{
+	background-color: aqua;
+	border-radius: 50px;
+	transform: translateX(10px);
+}
+#father:hover{
+	width: 500px;
+	height: 500px;
+}
+@media (max-width:767px){
+ #sc {
+   width: 540px; 
+   height: 500px; 
+ }
+}
+.foot #news{
+	color: white;
+	font-family: cursive;
+	font-size: 30px;
+}
+.foot #today a{
+	color: black;
+	background-color: aliceblue;
+	font-family: monospace;
+	font-size: 25px;
+	padding-top: 30px;
+	border-radius: 10px;
+	cursor: pointer;
+	border: 4px solid aliceblue;
+	height: 60px;
+	width: 300px;
+}
+.foot #yesterday a{
+	color: black;
+	background-color: aliceblue;
+	font-family: 'Courier New', Courier, monospace;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 25px;
+	padding-top: 30px;
+	border: 4px solid aliceblue;
+	height: 60px;
+	width: 300px;
+}
+.foot #back a{
+	color: black;
+	border-radius: 10px;
+	background-color: aliceblue;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 25px;
+	cursor: pointer;	
+	padding-top: 30px;
+	border: 4px solid aliceblue;
+	height: 60px;
+	width: 300px;
+}

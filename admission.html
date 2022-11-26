@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admission</title>
+	<link rel="stylesheet" type="text/css" href="ad.css">
+</head>
+<body>
+	<div class="admi">
+<h1><center><b>Admission Form<hr></b></center></h1><br>
+<form autocomplete="off" name="submit-to-google-sheet">
+	<center>
+		<div class="admin">
+		Name<br><input type="text" id="name" size="20px" name="Name" placeholder="Enter your name" required minlength="2" maxlength="30"><br>
+		Father's Name<br><input id="fname" type="text" name="Fname" placeholder="Enter your Father name" required minlength="2" maxlength="30"><br>
+		Father's Occupation<br><select id="foccupation" name="Foccupation">
+			<option>Doctor</option>
+			<option>Engineer</option>
+			<option>Buisnessman</option>
+			<option>servant</option>
+			<option>Teacher</option>
+			<option>Judge</option>
+		</select><br>
+		Mother's Name<br><input type="text" id="Mname" name="Mname" placeholder="Enter your Mother name" required minlength="2" maxlength="30"><br>
+		Mother's Occupation<br><select id="moccupation" name="Moccupation">
+			<option>Doctor</option>
+			<option>Engineer</option>
+			<option>Buisnessman</option>
+			<option>servant</option>
+			<option>Housewife</option>
+			<option>Teacher</option>
+		</select><br>
+		Phone number<br><input type="mobile" id="pnum" name="Pnumber" required placeholder="Enter your phone number" minlength="10" maxlength="10"><br>
+		E-mail<br><input type="email" id="email" required size="20px" placeholder="Enter your E-mail" name="Email"><br>
+		Address<br><input type="text" id="add" name="Address" placeholder="Enter your address" required maxlength="30" minlength="5"><br>
+		D.O.B<br><input type="date" id="dob" name="Date" required placeholder="Enter your date of birth"><br>
+		Previous class percentage<br><input type="text" name="Pclassp" id="pcp" required placeholder="enter your previous class percentage"><br>
+		Previous class<br> <select id="pc" name="Pclass">
+			<option>L.K.G</option>
+			<option>U.K.G</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+		</select><br>
+		Admission for class<br><select id="ac" name="Aclass">
+			<option>L.K.G</option>
+			<option>U.K.G</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+		</select><br>
+		</div>
+		<a href="a.txt"><img src="ter.png" height="60px" width="50px" style="color: white;"></a>
+		<div class="but">
+		<input id="sub" type="submit" name="Submit" value="Submit">
+		<input id="res" type="reset" name="reset">
+	</div>
+	</center>
+</form>
+</div><hr>
+<center>
+<div class="links">
+		<h2><b><i>ST.JOSEPHS NAWADA @2022</i></b></h2><br>
+	<a href="https://www.youtube.com/channel/UCSVjVRzBoCjlVHI19VcI6Bg"><img src="yt.png" height="100px" width="100px"></a>
+	<h1><b>SJS NAWADA</b></h1></center></div>
+	<script type="text/javascript">
+		alert("You Are Visiting St. Joseph School Admission Form Page")
+	</script>
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbzVb93b4pIGyR0p3L_xRqsk3QqR-m3OJ56UuelTR3KFH9UP4I0nR1C8UQbYjmq1N2HF/exec'
+		const form = document.forms['submit-to-google-sheet']
+	  
+		form.addEventListener('submit', e => {
+		  e.preventDefault()
+		  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			.then(response => console.log('Success!', response))
+			alert("Success")
+			.catch(error => console.error('Error!', error.message))
+			alert("An Error Occured")
+		})
+	  </script>
+</body>
+</html>

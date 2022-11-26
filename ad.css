@@ -1,0 +1,79 @@
+body{
+	background-image: url("bg3.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.admi{
+	font-size: 30px;
+	padding: 14px;
+	margin: 10px;
+	cursor: pointer;
+	outline: none;
+	color: white;
+}
+.admi h1:hover{
+	color: aqua;
+	cursor: pointer;
+	transform: translate3d(10px, 20px, 30px);
+	background-color: #5580ab;
+}
+.admin input{
+	font-size: 20px;
+	padding: 14px;
+	margin: 10px;
+	outline: none;
+	color: blueviolet;
+}
+.but #sub{
+	background: none;
+	color: black;
+	border: 5px solid balck;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 5px;
+}
+.but #sub:hover{
+	background-color: blueviolet;
+	color: white;
+}
+.but #res{
+	background: none;
+	color: black;
+	border: 5px solid balck;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 5px;
+}
+.but #res:hover{
+	background-color: blueviolet;
+	color: white;
+}
+.links a{
+	border-radius: 12px;
+	border: none;
+	padding: 10px 42px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	display: inline-block; 
+}
+.links a:hover{
+	transform: translateX(10px);
+}
+.links a:hover:after{
+	width: 100%;
+}
+.links h2:hover{
+	background-color: aliceblue;
+	border-radius: 50px;
+	transform: translateX(10px);
+	cursor: pointer;
+}
+.links h1:hover{
+	background-color: blueviolet;
+	border-radius: 50px;
+	transform: translateY(10px);
+}
